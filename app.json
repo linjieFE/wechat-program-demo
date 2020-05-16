@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/chaptor2/chaptor2"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "hello wechat!",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "red",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}
