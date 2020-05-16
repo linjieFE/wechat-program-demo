@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="nav-block wrap">
+    <block> 
+      <view class="wrap-item">
+        <button type="{{btnType}}" size="{{btnSize}}" plain="{{btnPlain}}" bindtap="wxlogin">登录</button>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">昵称：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{nickname}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">城市：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{city}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">js_code：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{loginCode}}' />
+                </view>
+            </view>
+        </view>
+
+        <button type="{{btnType}}" size="{{btnSize}}" plain="{{btnPlain}}" bindtap="get3rdSessionId">获取3rdSessionId</button>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">sessionId：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{sessionId}}' />
+                </view>
+            </view>
+        </view>
+
+        <button type="{{btnType}}" size="{{btnSize}}" plain="{{btnPlain}}" bindtap="getUserAllData">解密用户信息</button>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">昵称: </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{nickname1}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">openId</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{openId}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">unionId</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{unionId}}' />
+                </view>
+            </view>
+        </view>
+      </view>
+    </block>
+</view>
