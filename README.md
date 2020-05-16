@@ -44,7 +44,7 @@
 
 下图是小程序从注册到页面加入，前后台切换流程。
 ![enter description here][4]
-
+![应用生命周期](./assets/images/1应用生命周期.png)
 
 
   [1]: ./assets/images/1应用生命周期.png "1应用生命周期.png"
