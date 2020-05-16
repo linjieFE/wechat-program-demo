@@ -42,11 +42,11 @@ Page({
   },
   //识别长按
   mylongtap: function(e){
-    console.log(e.timeStamp + '- long tap')
+    console.log(e.timeStamp + '- long tap 识别长按')
   },
   //触摸开始
   mytouchstart: function(e){
-    console.log(e.timeStamp + '- touch start')
+    console.log(e.timeStamp + '- touch start 触摸开始')
     console.log(e.touches.length);
     this.setData({startPoint: [e.touches[0].pageX, e.touches[0].pageY]});
   },
@@ -57,19 +57,19 @@ Page({
     var startPoint = this.data.startPoint;
     if(curPoint[0] <= this.data.startPoint[0]){
       if(Math.abs(curPoint[0]-startPoint[0])>= Math.abs(curPoint[1]-startPoint[1])){
-        console.log(e.timeStamp + '- touch left move')
+        console.log(e.timeStamp + '- touch left move 触摸点移动')
       }else{
         if(curPoint[1]>= startPoint[1]){
           this.setData({btnWidth: this.data.btnWidth-1})
-          console.log(e.timeStamp + '- touch down move')
+          console.log(e.timeStamp + '- touch down move 向下移动')
         }else{
           this.setData({btnWidth: this.data.btnWidth+1})
-          console.log(e.timeStamp + '- touch up move')
+          console.log(e.timeStamp + '- touch up move 向上移动')
         }
       }
     }else{
       if(Math.abs(curPoint[0]-startPoint[0])>= Math.abs(curPoint[1]-startPoint[1])){
-        console.log(e.timeStamp + '- touch right move')
+        console.log(e.timeStamp + '- touch right move 向右移动')
       }else{
         if(curPoint[1]>= startPoint[1]){
           this.setData({btnWidth: this.data.btnWidth-1})
@@ -83,12 +83,12 @@ Page({
   },
   //触摸被中断
   mytouchcacel: function(e){
-    console.log(e.timeStamp + '- touch cancel')
+    console.log(e.timeStamp + '- touch cancel 触摸被中断')
     
   },
   //触摸结束
   mytouchend: function(e){
-    console.log(e.timeStamp + '- touch end')
+    console.log(e.timeStamp + '- touch end 触摸结束')
     
   },
   onPullDownRefresh: function(e){

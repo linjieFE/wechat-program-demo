@@ -44,8 +44,6 @@
 
 下图是小程序从注册到页面加入，前后台切换流程。
 ![enter description here][4]
-![应用生命周期](./assets/images/1应用生命周期.png)
-
 
   [1]: ./assets/images/1应用生命周期.png "1应用生命周期.png"
   [2]: ./assets/images/2页面生命周期.png "2页面生命周期.png"
@@ -263,3 +261,5 @@ Page({
 #### 5.多点触控
 
 由于模拟器尚不支持多点触控，内测开放后，继续补充。
+> 注意
+新版 微信小程序 `longtap` 事件已弃用 ,改用 `longpress`
