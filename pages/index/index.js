@@ -6,11 +6,15 @@ Page({
     motto: 'Hello World1',
     userInfo: {}
   },
+  bindNext:function(){
+    wx.navigateTo({
+      url: '../chaptor2/chaptor2'//事件绑定
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      // url: '../logs/logs'
-      url:'../chaptor2/chaptor2'//事件绑定
+      url: '../logs/logs'
     })
   },
   onLoad: function () {

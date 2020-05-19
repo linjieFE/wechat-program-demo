@@ -4,6 +4,7 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
+  <van-button bindtap="bindNext">下一章</van-button>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
