@@ -1,10 +1,15 @@
 <!--index.wxml-->
 <view class="container">
-  <button id="myid" style="width:{{btnWidth}}px" data-info-one="extra info" type="primary" 
+  <button 
+  id="myid" 
+  style="width:{{btnWidth}}px" 
+  data-info-one="extra info" 
+  type="primary" 
   bindlongtap="mylongtap"
   bindtap="mytap" 
   bindlongpress="mylongtap" bindtouchstart="mytouchstart" bindtouchmove="mytouchmove" bindtouchcancel="mytouchcacel" bindtouchend="mytouchend">点我吧</button>
   <block wx:for="{{testArr}}" wx:key="logitem">
     <view>{{item}}</view>
   </block>
+  <van-button bindtap="bindNext">下一章</van-button>
 </view>

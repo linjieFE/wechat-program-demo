@@ -9,9 +9,9 @@ Page({
     startPoint: [0,0]
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindNext:function () {
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../chaptor03/chat'
     })
   },
   onLoad: function () {
