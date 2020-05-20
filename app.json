@@ -15,7 +15,22 @@
     "pages/artice/index/index",
     "pages/artice/article/list",
     "pages/artice/articledetail/detail",
-    "pages/local/index"
+    "pages/local/index",
+    "pages/canvas/index/index",
+    "pages/canvas/canvas1/canvas1",
+    "pages/canvas/canvas2/canvas2",
+    "pages/canvas/canvas3/canvas3",
+    "pages/canvas/canvas4/canvas4",
+    "pages/canvas/canvas5/canvas5",
+    "pages/share/share/share",
+    "pages/share/index/index",
+    "pages/weixinDemo/index/index",
+    "pages/weixinDemo/component/labels/labels",
+    "pages/weixinDemo/component/map/map",
+    "pages/weixinDemo/component/button/buttons",
+    "pages/weixinDemo/component/flex/myflex",
+    "pages/weixinDemo/component/uploadfile/uploadfile",
+    "pages/weixinDemo/component/myrequest/myreq"
   ],
   "window": {
     "backgroundTextStyle": "dark",

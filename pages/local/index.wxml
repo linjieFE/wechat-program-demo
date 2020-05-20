@@ -39,4 +39,5 @@
     <button bindtap="clearData">清除缓存</button>
   </view>
 </view>
+ <van-button bindtap="bindNext" type="info">下一章</van-button>
 </view>

@@ -1,4 +1,0 @@
-/* pages/article/list.wxss */
-.page__bd{
-    margin-top: 100rpx;
-}

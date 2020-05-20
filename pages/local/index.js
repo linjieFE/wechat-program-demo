@@ -8,6 +8,11 @@ Page({
     storageValue: ''
   },
   //事件处理函数
+  bindNext:function(){
+    wx.navigateTo({
+      url: '../canvas/index/index'
+    })
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'

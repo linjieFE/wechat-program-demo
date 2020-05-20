@@ -16,7 +16,7 @@ Page({
   },
   bindNext:function () {
     wx.navigateTo({
-      url: '../chaptor03/caht'
+      url: '../chaptor03/chat'
     })
   },
   onLoad: function () {
