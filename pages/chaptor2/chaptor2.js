@@ -9,9 +9,14 @@ Page({
     startPoint: [0,0]
   },
   //事件处理函数
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
   bindNext:function () {
     wx.navigateTo({
-      url: '../chaptor03/chat'
+      url: '../chaptor03/caht'
     })
   },
   onLoad: function () {

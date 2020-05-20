@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="section">
+        <van-cell-group>
+            <van-field
+                value="{{ storageKey }}"
+                required
+                clearable
+                label="key"
+                icon="question-o"
+                placeholder="输入key"
+                bindblur="keyIpt"
+            />
+            <van-field
+                value="{{ storageValue }}"
+                required
+                clearable
+                label="value"
+                icon="question-o"
+                placeholder="输入value"
+                bindblur="valueIpt"
+            />
+        </van-cell-group>
+   <input placeholder="输入key" bindblur="keyIpt" value="{{storageKey}}"/>
+   <input placeholder="输入value" bindblur="valueIpt" value="{{storageValue}}" />
+  <view class="btn-area">
+    <button bindtap="save">保存</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="getData">获取数据</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="getDataInfo">获取缓存信息</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="removeData">移除数据</button>
+  </view>
+  <view class="btn-area">
+    <button bindtap="clearData">清除缓存</button>
+  </view>
+</view>
+</view>

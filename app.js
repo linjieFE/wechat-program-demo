@@ -33,6 +33,8 @@ App({
   },
   globalData:{
     userInfo:null,
+    // server: 'https://localhost:8443/weappservice/api/v1',
+    appId: 'JWEJIJ345QHWJKENVKF',
     lastStartTime: new Date()
-  }
+  },
 })

@@ -1,0 +1,145 @@
+<!--index.wxml-->
+<view class="nav-block wrap">
+    <block> 
+      <view class="wrap-item">
+        <!-- <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">昵称：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{nickname}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">城市：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{city}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">js_code：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{loginCode}}' />
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">sessionId：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{sessionId}}' />
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">昵称: </view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{nickname1}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">openId</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{openId}}' />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">unionId</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" value='{{unionId}}' />
+                </view>
+            </view>
+        </view> -->
+        <button type="{{btnType}}" size="{{btnSize}}" plain="{{btnPlain}}" bindtap="wxlogin">登录</button>
+        <van-cell-group>
+            <van-field
+                value="{{ nickname }}"
+                required
+                clearable
+                label="昵称："
+                icon="question-o"
+                placeholder="请输入昵称"
+                bind:click-icon="onClickIcon"
+            />
+            <van-field
+                value="{{ city }}"
+                required
+                clearable
+                label="城市："
+                icon="question-o"
+                placeholder="请输入城市"
+                bind:click-icon="onClickIcon"
+            />
+            <van-field
+                value="{{ loginCode }}"
+                required
+                clearable
+                label="js_code："
+                icon="question-o"
+                placeholder="请输入js_code"
+                bind:click-icon="onClickIcon"
+            />
+        </van-cell-group>
+        <van-button type="{{btnType}}" size="{{btnSize}}" plain="{{btnPlain}}" bindtap="get3rdSessionId">获取3rdSessionId</van-button>
+        
+        <van-cell-group>
+            <van-field
+                value="{{ sessionId }}"
+                required
+                clearable
+                label="sessionId："
+                icon="question-o"
+                placeholder="请输入sessionId"
+                bind:click-icon="onClickIcon"
+            />
+        </van-cell-group>
+        <van-button type="{{btnType}}" size="{{btnSize}}" plain="{{btnPlain}}" bindtap="getUserAllData">解密用户信息</van-button>
+        <van-cell-group>
+            <van-field
+                value="{{ nickname1 }}"
+                required
+                clearable
+                label="昵称:"
+                icon="question-o"
+                placeholder="请输入昵称:"
+                bind:click-icon="onClickIcon"
+            />
+            <van-field
+                value="{{ openId }}"
+                required
+                clearable
+                label="openId:"
+                icon="question-o"
+                placeholder="请输入openId"
+                bind:click-icon="onClickIcon"
+            />
+            <van-field
+                value="{{ unionId }}"
+                required
+                clearable
+                label="unionId:"
+                icon="question-o"
+                placeholder="请输入unionId"
+                bind:click-icon="onClickIcon"
+            />
+            
+        </van-cell-group>
+        
+      </view>
+    </block>
+    <van-button bindtap = "bindViewTap" type="info">下一章 route</van-button>
+</view>

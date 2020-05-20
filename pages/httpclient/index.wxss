@@ -1,0 +1,7 @@
+/**index.wxss**/
+page{
+    background-color: 'gray';
+}
+.wrap-item button{
+    margin: 10px 0 10px 0;
+}

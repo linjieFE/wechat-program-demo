@@ -4,7 +4,18 @@
     "pages/logs/logs",
     "pages/chaptor2/chaptor2",
     "pages/chaptor03/chat",
-    "pages/music/index"
+    "pages/music/index",
+    "pages/httpclient/index",
+    "pages/route/index/index",
+    "pages/route/route1/route1",
+    "pages/route/route2/route2",
+    "pages/route/route3/route3",
+    "pages/route/route4/route4",
+    "pages/route/route5/route5",
+    "pages/artice/index/index",
+    "pages/artice/article/list",
+    "pages/artice/articledetail/detail",
+    "pages/local/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -16,6 +27,9 @@
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "van-button": "@vant/weapp/button/index"
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
   }
 }

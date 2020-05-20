@@ -1,6 +1,6 @@
 <view class="container">
     <input type="text" bindinput="bindKeyInput" placeholder="请输入内容"/>
-    <button size="default" type="primary" bindtap="sendtap">发送</button >
+    <vant-button size="default" type="primary" bindtap="sendtap">发送</vant-button>
     <van-button bindtap="bindNext">下一章music</van-button>
     <view wx:for="{{historyMsgList}}" wx:key="index">
         <view>{{index}}{{item}}</view>

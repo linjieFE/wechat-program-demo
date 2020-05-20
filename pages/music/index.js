@@ -15,7 +15,7 @@ Page({
   //事件处理函数
   bindNext:function () {
     wx.navigateTo({
-      url: '../music/index'
+      url: '../httpclient/index'
     })
   },
   onLoad: function () {

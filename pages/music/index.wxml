@@ -15,6 +15,6 @@
     </view>
 </view>
 <view class="container">
-   
     <video src="{{videoSrc}}"></video>
 </view>
+<van-button bindtap = "bindNext" type="info">下一章 httpclient</van-button>
